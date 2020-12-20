@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+
+    <title>ElectroDeck Music Player</title>
+</head>
+<body>
+    
+    <h1 class="title">ElektroDeck</h1>
+    
+    <h2 class="flavour">play that funky music!</h2>
+
+    
+    
+    <audio src="audio/bensound-allthat.mp3" id="audio"></audio>
+
+    <div class="audiocontrols">
+        <div class="controls">
+        <button id="previous" class="btn">
+            <i class="fas fa-chevron-circle-left"></i>
+        </button>
+       
+        <button id="begin" class= "btn-play"> 
+            <i class="fas fa-play-circle"></i>
+        </button>
+        
+        <button id="next" class="btn"> 
+            <i class="fas fa-chevron-circle-right"></i>
+        </button>
+            </div>
+
+    </div>
+
+    <div class="songinfo" id="songname">
+        <p class="songtitles"></p>
+     </div>
+
+
+    <div class="albumcover" id="art">
+        <img src="img/bensound-allthat.jpg" id="cover" alt="album cover">
+    </div>
+
+
+
+
+    <script src="js/scripts.js"></script>
+
+</body>
+    
+</html>

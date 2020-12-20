@@ -1,0 +1,142 @@
+/*styling for the content of the bofy and setting everything up for the music player*/
+body {
+    height: 70vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+    margin:0;
+}
+
+ /* this holds the title for the page*/
+.title{
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    border-radius: 0%;
+    margin-top:60px;
+    padding-top: 200px;
+}
+
+/*some flavour text underneath the title*/
+.flavour {
+    font-family: 'Luckiest Guy', cursive;
+    color: #fff;
+}
+
+/* this container holds the place where the tracklist name will be injected*/
+.songinfo {
+    font-family: 'Luckiest Guy', cursive;
+    padding:5px;
+    margin-top:300px;
+    z-index: 10;
+
+}
+
+/* this is the container for the album covers*/
+.albumcover {
+    margin-top: 100px;
+    position:relative;
+    display: flex;
+    position: center;
+    z-index: -1;
+}
+
+/* setting up the class to rotate the album when prompted by javascript to add the spin class*/
+.albumcover.spin img {
+    animation: rotate 4s linear infinite;
+    animation-play-state: running;
+}
+
+.albumcover img {
+    border-radius: 50%;
+    box-shadow: 10px 10px 8px #888888;
+    animation: rotate 4s linear infinite;
+    animation-play-state: paused;
+    width: 200px;
+    height: 200px;
+}
+
+/*containter for the audio controls*/
+.audiocontrols {
+    height:100px;
+    width:350px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-color:azure;
+    padding: 0px;
+    margin-top: 60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    
+
+}
+
+/* removingf he outline when pressing the button*/
+.btn:focus {
+    outline: 0;
+  }
+
+.btn {
+    border:0;
+    border-radius: 50%;
+    background-color: azure;
+    color:burlywood;
+    width: 10px;
+    height: 10px;
+    font-size: 20px;
+    margin: 30px 10px 0 10px;
+    padding:10px;
+    z-index:3;
+    
+
+}
+
+
+
+    
+
+.btn-play {
+    border: 0;
+    border-radius: 50%;
+    background-color:azure;
+    color: burlywood;
+    width:4em;
+    height:4em;
+    font-size: 30px;
+    margin: 0 10px 0 10px;
+    padding: 15px;
+    z-index: 3;
+    
+}
+
+.btn-play:focus {
+    outline: 0;
+}
+
+
+/*setting up a simple colour change on hover to help with visibility*/
+.btn:hover{
+    cursor:pointer;
+    color:brown;
+}
+
+.btn-play:hover{
+    cursor:pointer;
+    color: brown;
+}
+
+
+
+/* keyframe for the roation is stored here*/
+@keyframes rotate {
+    from {
+            transform: rotate(0deg)
+    }
+
+    to {
+            transform: rotate(360deg)
+    }
+}
